@@ -10,8 +10,13 @@ A modern and beautiful music player application built with Flutter and Riverpod 
 - 🔄 Repeat and shuffle functionality
 - 📱 Responsive design
 - 🎚️ Seek through tracks with a slider
-- 🔍 Search and browse music
 - 💫 Loading states and error handling
+
+## Download
+
+You can download the latest version of the app here:
+
+[![Download APK](https://img.shields.io/badge/Download-APK-blue.svg)](https://drive.google.com/file/d/1Q6fuAATDdb3V93114dn_6gHcFGMStwFR/view?usp=sharing)
 
 ## Screenshots
 
