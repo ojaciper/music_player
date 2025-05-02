@@ -80,8 +80,9 @@ lib/
 │       ├── discover_screen.dart
 │       └── now_playing_screen.dart
 ├── viewmodels/
-│   ├── loading_viewmodel.dart
-│   └── players_viewmodel.dart      # Handles audio playback and playlist management
+│   ├── loading_viewmodel.dart      # Handles  loading of the discovering screen
+│   ├── players_viewmodel.dart      # Handles audio playback and playlist management
+│   └── songs_viewmodel.dart        # Manages song list and music discovery
 └── main.dart
 ```
 
@@ -103,6 +104,12 @@ The app uses Riverpod with StateNotifier for robust state management:
   - Track navigation
   - Shuffle and repeat modes
   - Position and duration tracking
+
+- `SongsNotifier`: Handles music discovery and song list management:
+  - Fetching songs from the API
+  - Managing the song list state
+  - Search functionality
+  - Song list updates
 
 - `LoadingStateNotifier`: Handles loading states and errors for async operations
 
