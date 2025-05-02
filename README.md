@@ -81,7 +81,7 @@ lib/
 │       └── now_playing_screen.dart
 ├── viewmodels/
 │   ├── loading_viewmodel.dart
-│   └── player_viewmodel.dart
+│   └── players_viewmodel.dart      # Handles audio playback and playlist management
 └── main.dart
 ```
 
@@ -90,8 +90,21 @@ lib/
 This project follows a clean architecture pattern with:
 - Riverpod for state management
 - Repository pattern for data access
-- MVVM (Model-View-ViewModel) architecture
+- MVVM (Model-View-ViewModel) architecture with StateNotifier pattern
 - Separation of concerns with dedicated providers and state management
+
+### State Management
+
+The app uses Riverpod with StateNotifier for robust state management:
+
+- `PlayerNotifier`: Manages audio playback state including:
+  - Playlist management
+  - Play/pause functionality
+  - Track navigation
+  - Shuffle and repeat modes
+  - Position and duration tracking
+
+- `LoadingStateNotifier`: Handles loading states and errors for async operations
 
 ## Features in Detail
 
